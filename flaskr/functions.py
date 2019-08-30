@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 scheduler = sched.scheduler(time.time, time.sleep)
 initial = time.time()
 currentTime = {}
-iterator = 1
+iterator = 0
 
 def testSched():
     # testAlpha()
@@ -28,8 +28,8 @@ def testAlpha():
 def printTimes():
     currentTime.update( {'START': initial} )
     global iterator
-    while iterator < 6:
-        scheduler.enter(1, 1, testSched, ())
+    while iterator < 50:
+        scheduler.enter(0.1, 1, testSched, ())
         scheduler.run()
         iterator+=1
     currentTime.update( {'END': time.time()} )
