@@ -2,7 +2,7 @@ import sched
 import time
 
 from alpha_vantage.timeseries import TimeSeries
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 scheduler = sched.scheduler(time.time, time.sleep)
 initial = time.time()

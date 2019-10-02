@@ -2,7 +2,7 @@ FROM python:3-alpine
 
 MAINTAINER Jake Pifer
 
-COPY app /flaskr
+COPY __init__ /flaskr
 
 WORKDIR /flaskr
 
