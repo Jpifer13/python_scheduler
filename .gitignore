@@ -65,3 +65,5 @@ varfile.py
 **build/
 **.spec
 env.sh
+
+*firmware-master**

@@ -30,8 +30,8 @@ except OSError:
     pass
 
 # a simple page that says hello
-@app.route('/test', methods=['GET'])
-def test():
+@app.route('/', methods=['GET'])
+def index():
     currentTime = functions.printTimes()
     times = json.dumps(currentTime)
     return times
